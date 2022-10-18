@@ -1,0 +1,23 @@
+name: Build Docker Container
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  push:
+    branches: [ "mater" ]
+  pull_request:
+    branches: [ "mater" ]
+
+jobs:
+  test_react:
+    uses: jacksonwun/inexperienceds.com-website-frontend/.github/workflows/test-react.yaml@main
+    secrets:
+      REACT_APP_PROXY_HOST: ${{ secrets.REACT_APP_PROXY_HOST }}
+      REACT_APP_BACKEND_PROXY_HOST: ${{ secrets.REACT_APP_BACKEND_PROXY_HOST }}
+      REACT_APP_FIREBASE_APIKEY: ${{ secrets.REACT_APP_FIREBASE_APIKEY }}
+      REACT_APP_FIREBASE_AUTH_DOMAIN: ${{ secrets.REACT_APP_FIREBASE_AUTH_DOMAIN }}
+      REACT_APP_FIREBASE_PROJECT_ID: ${{ secrets.REACT_APP_FIREBASE_PROJECT_ID }}
+      REACT_APP_FIREBASE_STORAGE_BUCKET: ${{ secrets.REACT_APP_FIREBASE_STORAGE_BUCKET }}
+      REACT_APP_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.REACT_APP_FIREBASE_MESSAGING_SENDER_ID }}
+      REACT_APP_FIREBASE_APPID: ${{ secrets.REACT_APP_FIREBASE_APPID }}
+      REACT_APP_FIREBASE_MEASUREMENT_ID: ${{ secrets.REACT_APP_FIREBASE_MEASUREMENT_ID }}
