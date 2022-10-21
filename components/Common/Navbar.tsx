@@ -36,17 +36,17 @@ export const Navbar = () => {
           <hr className="d-lg-none text-white-50" />
           <ul className="flex flex-col lg:flex-row text-lg">
             <li className="nav-left-item">
-              <NavLink href="/" as="/">
+              <NavLink href="/About" as="/About">
                 <span>About</span>
               </NavLink>
             </li>
             <li className="nav-left-item">
-              <NavLink href="/" as="/">
+              <NavLink href="/Blog" as="/Blog">
                 <span>Blog</span>
               </NavLink>
             </li>
             <li className="nav-left-item">
-              <NavLink href="/" as="/">
+              <NavLink href="/Support" as="/Support">
                 <span>Support</span>
               </NavLink>
             </li>

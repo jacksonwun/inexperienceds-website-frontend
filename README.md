@@ -1,9 +1,6 @@
-[![Build Docker Container](https://github.com/jacksonwun/
-inexperienceds.com-website-frontend/actions/workflows/build.yaml/badge.svg?branch=master)](https://github.com/jacksonwun/
+[![Build Docker Container](https://github.com/jacksonwun/inexperienceds.com-website-frontend/actions/workflows/build.yaml/badge.svg?branch=master)](https://github.com/jacksonwun/
 inexperienceds.com-website-frontend/actions/workflows/build.yaml)
-[![Test React](https://github.com/jacksonwun/
-inexperienceds.com-website-frontend/actions/workflows/test-react.yaml/badge.svg?branch=master)](https://github.com/jacksonwun/
-inexperienceds.com-website-frontend/actions/workflows/test-react.yaml)
+[![Test React](https://github.com/jacksonwun/inexperienceds.com-website-frontend/actions/workflows/test-react.yaml/badge.svg?branch=master)](https://github.com/jacksonwun/inexperienceds.com-website-frontend/actions/workflows/test-react.yaml)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
