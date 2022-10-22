@@ -19,6 +19,11 @@ aside {
   float: right;
 }
 
+@media (max-width: 992px) {
+  aside {
+    visibility: hidden;
+  }
+}
 a {
   color: inherit;
   text-decoration: none;
