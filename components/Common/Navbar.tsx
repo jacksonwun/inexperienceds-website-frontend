@@ -56,12 +56,12 @@ export const Navbar = () => {
           <hr className="d-lg-none text-white-50" />
           <ul className="navbar-nav pull-xs-right flex-wrap flex-col text-lg">
             <li className="nav-item">
-              <NavLink href="/" as="/">
+              <NavLink href="/signIn" as="/signIn">
                 <span>Sign In</span>
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink href="/" as="/">
+              <NavLink href="/signUp" as="/signUp">
                 <span>Sign Up</span>
               </NavLink>
             </li>

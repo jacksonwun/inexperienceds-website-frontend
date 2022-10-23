@@ -1,56 +1,39 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import type { NextPage } from 'next';
+import Head from 'next/head';
 
 const Blog: NextPage = () => {
-    return (
-        <>
-            <main className="main">
-                <h1 className="title">
-                Support to <a href="https://nextjs.org">Next.js!</a>
-                </h1>
+  return (
+    <div className="flex justify-center item-center ">
+      <main className="main flex flex-col justify-center item-center ">
+        <h1 className="title">Support Us!</h1>
 
-                <p className="description">
-                Get started by editing{' '}
-                <code className="code">pages/index.tsx</code>
-                </p>
+        <div className="flex item-center justify-center h-full mt-[10rem]">
+          <a
+            href="https://www.buymeacoffee.com/jacksonwun"
+            className="card p-[1rem] bg-gray-300"
+          >
+            <h2>Buy Me A Coffee</h2>
+            <div className="flex flex-row justify-evenly">
+              <p>Thank You!!!</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-arrow-return-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </main>
+    </div>
+  );
+};
 
-                <div className="grid">
-                <a href="https://nextjs.org/docs" className="card">
-                    <h2>Documentation &rarr;</h2>
-                    <p>Find in-depth information about Next.js features and API.</p>
-                </a>
-
-                <a href="https://nextjs.org/learn" className="card">
-                    <h2>Learn &rarr;</h2>
-                    <p>Learn about Next.js in an interactive course with quizzes!</p>
-                </a>
-
-                <a
-                    href="https://github.com/vercel/next.js/tree/canary/examples"
-                    className="card"
-                >
-                    <h2>Examples &rarr;</h2>
-                    <p>Discover and deploy boilerplate example Next.js projects.</p>
-                </a>
-
-                <a
-                    href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                    className="card"
-                >
-                    <h2>Deploy &rarr;</h2>
-                    <p>
-                    Instantly deploy your Next.js site to a public URL with Vercel.
-                    </p>
-                </a>
-                </div>
-            </main>
-            <aside>    
-                <div className='p-2 bg-gray-200 rounded-sm mb-4'>
-                <p className='mb-2 font-semibold'>Popular Tags</p>      
-                </div>
-            </aside>
-        </>       
-    )
-}
-
-export default Blog
+export default Blog;
