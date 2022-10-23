@@ -6,6 +6,8 @@ on:
 
   push:
     branches: [ "mater" ]
+  pull_request:
+    branches: [ "mater" ]
 
 jobs:
   test_react:
