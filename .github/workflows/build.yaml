@@ -3,14 +3,13 @@ name: Build Docker Container
 on:
   workflow_call:
   workflow_dispatch:
+
   push:
-    branches: [ "mater" ]
-  pull_request:
     branches: [ "mater" ]
 
 jobs:
   test_react:
-    uses: jacksonwun/${{ github.repository }}/.github/workflows/test-react.yaml@master
+    uses: jacksonwun/inexperienceds.com-website-frontend/.github/workflows/test-react.yaml@master
     secrets:
       REACT_APP_PROXY_HOST: ${{ secrets.REACT_APP_PROXY_HOST }}
       REACT_APP_BACKEND_PROXY_HOST: ${{ secrets.REACT_APP_BACKEND_PROXY_HOST }}
