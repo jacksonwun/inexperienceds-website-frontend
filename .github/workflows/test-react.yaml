@@ -1,6 +1,9 @@
 name: Test React
 
 on:
+  push:
+    branches: [ "master" ]
+
   workflow_call:
     secrets:
       REACT_APP_PROXY_HOST:
@@ -22,10 +25,6 @@ on:
       REACT_APP_FIREBASE_MEASUREMENT_ID:
         required: true
   workflow_dispatch:
-  push:
-    branches: [ "mater" ]
-  pull_request:
-    branches: [ "mater" ]
 
 jobs:
   build:
