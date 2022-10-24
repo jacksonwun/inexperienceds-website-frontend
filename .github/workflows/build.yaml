@@ -9,7 +9,7 @@ on:
 
 jobs:
   test_react:
-    uses: jacksonwun/${{ github.repository }}/.github/workflows/test-react.yaml@master
+    uses: jacksonwun/${{ github.event.repository.name }}/.github/workflows/test-react.yaml@master
     secrets:
       REACT_APP_PROXY_HOST: ${{ secrets.REACT_APP_PROXY_HOST }}
       REACT_APP_BACKEND_PROXY_HOST: ${{ secrets.REACT_APP_BACKEND_PROXY_HOST }}

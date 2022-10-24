@@ -7,7 +7,7 @@ const parse = require('html-react-parser');
 
 const Content = ({ article }: { article: IArticle }) => {
   return (
-    <Paper elevation={3} className="my-auto mx-[2rem] lg:w-[50vw] lg:mx-auto">
+    <Paper elevation={3} className="my-auto mx-[2rem] lg:w-[80vw] lg:mx-auto">
       <h1 className="text-lg font-black">{article.title}</h1>
       <hr />
       <h2>
@@ -35,13 +35,13 @@ const Content = ({ article }: { article: IArticle }) => {
         <strong>Tags:&nbsp;&nbsp;</strong>
         <ul className="tag-list flex flex-row gap-[1rem]">
           {article.tags.map((tag) => (
-            <li key={tag} className="tag-default tag-pill tag-outline">
+            <li key={tag} className="tag-default tag-pill tag-outline bg-yellow-500 rounded-lg p-[0.2rem] mx-[0.5rem]">
               {tag}
             </li>
           ))}
         </ul>
       </div>
-      <div className="flex justify-center font-black my-[5rem]">
+      <div className="flex justify-center font-black m-[5rem]">
         <Link href="/Blog">Go Back</Link>
       </div>
     </Paper>
