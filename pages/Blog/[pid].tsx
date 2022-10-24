@@ -7,7 +7,7 @@ const parse = require('html-react-parser');
 
 const Content = ({ article }: { article: IArticle }) => {
   return (
-    <Paper elevation={3} className="lg:w-[50vw] m-auto">
+    <Paper elevation={3} className="my-auto mx-[2rem] lg:w-[50vw] lg:mx-auto">
       <h1 className="text-lg font-black">{article.title}</h1>
       <hr />
       <h2>
@@ -29,7 +29,7 @@ const Content = ({ article }: { article: IArticle }) => {
       <div>
         <strong>Content:&nbsp;&nbsp;</strong>
         <br />
-        {parse(article.caption)}
+        {parse(article.content)}
       </div>
       <div>
         <strong>Tags:&nbsp;&nbsp;</strong>
